@@ -12,7 +12,6 @@ class MotorControlSubsystem: public Subsystem {
 private:
 	// It's desirable that everything possible under private except
 	// for methods that implement subsystem capabilities
-//	CANJaguar *motorJaguar;
 	CANJaguar *leftFrontJaguar;
 	CANJaguar *leftRearJaguar;
 	CANJaguar *rightFrontJaguar;
