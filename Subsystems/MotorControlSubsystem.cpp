@@ -3,10 +3,10 @@
 #include "../Robotmap.h"
 
 MotorControlSubsystem::MotorControlSubsystem() : Subsystem("MotorControlSubsystem") {
-	motorJaguar = new CANJaguar(windowMotor, CANJaguar::kPercentVbus);	// set output from -1.0 to 1.0 (same as PWM)
-	motorJaguar->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);		// set Jag to "break" when output = 0.0
+//	motorJaguar = new CANJaguar(windowMotor, CANJaguar::kPercentVbus);	// set output from -1.0 to 1.0 (same as PWM)
+//	motorJaguar->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);		// set Jag to "break" when output = 0.0
 
-/*
+
  	leftFrontJaguar = new CANJaguar(leftFrontMotor, CANJaguar::kPercentVbus);	// set output from -1.0 to 1.0 (same as PWM)
 	leftFrontJaguar->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);		// set Jag to "break" when output = 0.0
 	
@@ -18,7 +18,7 @@ MotorControlSubsystem::MotorControlSubsystem() : Subsystem("MotorControlSubsyste
 
 	rightRearJaguar = new CANJaguar(rightRearMotor, CANJaguar::kPercentVbus);	// set output from -1.0 to 1.0 (same as PWM)
 	rightRearJaguar->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);		// set Jag to "break" when output = 0.0
-*/
+
 }
     
 void MotorControlSubsystem::InitDefaultCommand() {
@@ -28,11 +28,11 @@ void MotorControlSubsystem::InitDefaultCommand() {
 }
 
 void MotorControlSubsystem::Drive(float speed) {
-	motorJaguar->Set(speed);
-//	leftFrontJaguar->Set(speed);
-//	leftRearJaguar->Set(speed);
-//	rightFrontJaguar->Set(speed);
-//	rightRearJaguar->Set(speed);
+//	motorJaguar->Set(speed);
+	leftFrontJaguar->Set(speed);
+	leftRearJaguar->Set(speed);
+	rightFrontJaguar->Set(speed);
+	rightRearJaguar->Set(speed);
 }
 
 // Put methods for controlling this subsystem
