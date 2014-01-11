@@ -31,8 +31,8 @@ void MotorControlSubsystem::Drive(float speed) {
 //	motorJaguar->Set(speed);
 	leftFrontJaguar->Set(speed);
 	leftRearJaguar->Set(speed);
-	rightFrontJaguar->Set(speed);
-	rightRearJaguar->Set(speed);
+	rightFrontJaguar->Set(-speed);
+	rightRearJaguar->Set(-speed);
 }
 
 // Put methods for controlling this subsystem

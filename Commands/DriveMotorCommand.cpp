@@ -12,7 +12,7 @@ void DriveMotorCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void DriveMotorCommand::Execute() {
-	motorControlSubsystem->Drive(oi->rightJoy->GetX());
+	motorControlSubsystem->Drive(oi->rightJoy->GetY());
 }
 
 // Make this return true when this Command no longer needs to run execute()
