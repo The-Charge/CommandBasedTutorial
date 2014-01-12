@@ -9,10 +9,6 @@
  * floating around.
  */
  
-//#define leftFrontMotor 2		// Jag on CAN Buss
-//#define rightFrontMotor 10		// Jag on CAN Buss
-//#define leftRearMotor 9			// Jag on CAN Buss
-//#define rightRearMotor 16		// Jag on CAN Buss
 
 #define windowMotor 10			// Jag on CAN Buss
 
