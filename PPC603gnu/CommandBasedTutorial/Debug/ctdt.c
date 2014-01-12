@@ -13,6 +13,8 @@ void _GLOBAL__I__ZN11CommandBaseC2EPKc();
 
 void _GLOBAL__I__ZN14ExampleCommandC2Ev();
 
+void _GLOBAL__I__ZN14ServoSubsystemC2Ev();
+
 void _GLOBAL__I__ZN16DriveMotorOneSecC2Ev();
 
 void _GLOBAL__I__ZN16ExampleSubsystemC2Ev();
@@ -22,6 +24,8 @@ void _GLOBAL__I__ZN17DriveMotorCommandC2Ev();
 void _GLOBAL__I__ZN21MotorControlSubsystemC2Ev();
 
 void _GLOBAL__I__ZN2OIC2Ev();
+
+void _GLOBAL__I__ZN8RunServoC2Ev();
 
 void _GLOBAL__I__ZN12PrintCommandC2EPKc();
 
@@ -81,11 +85,13 @@ void (*_ctors[])() =
     _GLOBAL__I__Z20FRC_userClassFactoryv,
     _GLOBAL__I__ZN11CommandBaseC2EPKc,
     _GLOBAL__I__ZN14ExampleCommandC2Ev,
+    _GLOBAL__I__ZN14ServoSubsystemC2Ev,
     _GLOBAL__I__ZN16DriveMotorOneSecC2Ev,
     _GLOBAL__I__ZN16ExampleSubsystemC2Ev,
     _GLOBAL__I__ZN17DriveMotorCommandC2Ev,
     _GLOBAL__I__ZN21MotorControlSubsystemC2Ev,
     _GLOBAL__I__ZN2OIC2Ev,
+    _GLOBAL__I__ZN8RunServoC2Ev,
     _GLOBAL__I__ZN12PrintCommandC2EPKc,
     _GLOBAL__I__ZN9Scheduler9_instanceE,
     _GLOBAL__I__ZN11WaitCommandC2Ed,
@@ -121,6 +127,8 @@ void _GLOBAL__D__ZN11CommandBaseC2EPKc();
 
 void _GLOBAL__D__ZN14ExampleCommandC2Ev();
 
+void _GLOBAL__D__ZN14ServoSubsystemC2Ev();
+
 void _GLOBAL__D__ZN16DriveMotorOneSecC2Ev();
 
 void _GLOBAL__D__ZN16ExampleSubsystemC2Ev();
@@ -130,6 +138,8 @@ void _GLOBAL__D__ZN17DriveMotorCommandC2Ev();
 void _GLOBAL__D__ZN21MotorControlSubsystemC2Ev();
 
 void _GLOBAL__D__ZN2OIC2Ev();
+
+void _GLOBAL__D__ZN8RunServoC2Ev();
 
 void _GLOBAL__D__ZN9Scheduler9_instanceE();
 
@@ -179,11 +189,13 @@ void (*_dtors[])() =
     _GLOBAL__D__Z20FRC_userClassFactoryv,
     _GLOBAL__D__ZN11CommandBaseC2EPKc,
     _GLOBAL__D__ZN14ExampleCommandC2Ev,
+    _GLOBAL__D__ZN14ServoSubsystemC2Ev,
     _GLOBAL__D__ZN16DriveMotorOneSecC2Ev,
     _GLOBAL__D__ZN16ExampleSubsystemC2Ev,
     _GLOBAL__D__ZN17DriveMotorCommandC2Ev,
     _GLOBAL__D__ZN21MotorControlSubsystemC2Ev,
     _GLOBAL__D__ZN2OIC2Ev,
+    _GLOBAL__D__ZN8RunServoC2Ev,
     _GLOBAL__D__ZN9Scheduler9_instanceE,
     _GLOBAL__D_wpi_error_s_ModuleIndexOutOfRange,
     _GLOBAL__D__ZN17MotorSafetyHelper12m_headHelperE,

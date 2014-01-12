@@ -4,6 +4,7 @@
 #include "Commands/Command.h"
 #include "Subsystems/ExampleSubsystem.h"
 #include "Subsystems/MotorControlSubsystem.h"
+#include "Subsystems/ServoSubsystem.h"
 #include "OI.h"
 
 
@@ -20,6 +21,7 @@ public:
 	// Create a single static instance of all of your subsystems
 	static ExampleSubsystem *examplesubsystem;
 	static MotorControlSubsystem *motorControlSubsystem;
+	static ServoSubsystem *servoSubsystem;
 	static OI *oi;
 };
 
