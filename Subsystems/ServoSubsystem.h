@@ -17,7 +17,7 @@ private:
 public:
 	ServoSubsystem();
 	void InitDefaultCommand();
-	void Position(float ServoPosition);
+	void Position(float servoPosition);
 };
 
 #endif
