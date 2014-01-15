@@ -20,7 +20,9 @@ private:
 public:
 	MotorControlSubsystem();
 	void InitDefaultCommand();
-	void Drive(float speed);
+	void DriveLeft(float Leftspeed);
+	void DriveRight(float Rightspeed);
+
 };
 
 #endif

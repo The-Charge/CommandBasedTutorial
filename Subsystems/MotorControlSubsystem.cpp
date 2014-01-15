@@ -24,11 +24,14 @@ void MotorControlSubsystem::InitDefaultCommand() {
 	SetDefaultCommand(new DriveMotorCommand());
 }
 
-void MotorControlSubsystem::Drive(float speed) {
-	leftFrontJaguar->Set(speed);
-	leftRearJaguar->Set(speed);
-	rightFrontJaguar->Set(-speed);
-	rightRearJaguar->Set(-speed);
+void MotorControlSubsystem::DriveLeft(float leftSpeed) {
+	leftFrontJaguar->Set(leftSpeed);
+	leftRearJaguar->Set(leftSpeed);
+}
+
+void MotorControlSubsystem::DriveRight(float rightSpeed) {
+	rightFrontJaguar->Set(-rightSpeed);
+	rightRearJaguar->Set(-rightSpeed);
 }
 
 // Put methods for controlling this subsystem

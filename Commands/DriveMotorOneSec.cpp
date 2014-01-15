@@ -16,7 +16,9 @@ void DriveMotorOneSec::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void DriveMotorOneSec::Execute() {
-	motorControlSubsystem->Drive(.3);
+	motorControlSubsystem->DriveLeft(.3);
+	motorControlSubsystem->DriveRight(.3);
+
 }
 
 // Make this return true when this Command no longer needs to run execute()
@@ -26,13 +28,17 @@ bool DriveMotorOneSec::IsFinished() {
 
 // Called once after isFinished returns true
 void DriveMotorOneSec::End() {
-	motorControlSubsystem->Drive(0);
+	motorControlSubsystem->DriveLeft(0);
+	motorControlSubsystem->DriveRight(0);
+
 	timer->Stop();
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void DriveMotorOneSec::Interrupted() {
-	motorControlSubsystem->Drive(0);
+	motorControlSubsystem->DriveLeft(0);
+	motorControlSubsystem->DriveRight(0);
+
 	timer->Stop();
 }
