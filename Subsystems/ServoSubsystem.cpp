@@ -3,7 +3,7 @@
 #include "../Robotmap.h"
 
 ServoSubsystem::ServoSubsystem() : Subsystem("ServoSubsystem") {
-	servo1 = new Servo(firstservo);
+	servo1 = new Servo(1, firstservo);
 }
     
 void ServoSubsystem::InitDefaultCommand() {
