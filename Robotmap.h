@@ -9,10 +9,13 @@
  * floating around.
  */
  
-#define leftFrontMotor 2		// Jag on CAN Buss
-#define rightFrontMotor 10		// Jag on CAN Buss
-#define leftRearMotor 9			// Jag on CAN Buss
-#define rightRearMotor 16		// Jag on CAN Buss
+#define leftFrontMotor 16		// Jag on CAN Buss
+#define leftCenterMotor 9		// To test ball collection
+#define rightFrontMotor 12		// Jag on CAN Buss
+#define leftRearMotor 8			// Jag on CAN Buss
+#define rightCenterMotor 2		// To test ball collection
+#define rightRearMotor 10		// Jag on CAN Buss
+
 
 #define firstservo 5			// Servo on PWM channel 5
 

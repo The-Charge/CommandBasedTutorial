@@ -12,6 +12,7 @@ CommandBase::CommandBase() : Command() {
 ExampleSubsystem* CommandBase::examplesubsystem = NULL;
 MotorControlSubsystem* CommandBase::motorControlSubsystem = NULL;
 ServoSubsystem* CommandBase::servoSubsystem = NULL;
+BallCollection* CommandBase::ballCollection = NULL;
 OI* CommandBase::oi = NULL;
 
 void CommandBase::init() {
@@ -20,6 +21,6 @@ void CommandBase::init() {
 	examplesubsystem = new ExampleSubsystem();
 	motorControlSubsystem = new MotorControlSubsystem();
 	servoSubsystem = new ServoSubsystem();
-	
+	ballCollection = new BallCollection();
 	oi = new OI();
 }
