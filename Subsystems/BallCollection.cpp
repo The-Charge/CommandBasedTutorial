@@ -18,10 +18,14 @@ void BallCollection::InitDefaultCommand() {
 
 void BallCollection::SpinLeft(float spinSpeed) {
 	leftCenterJaguar->Set(spinSpeed);
+	float leftAmps =(leftCenterJaguar->GetOutputCurrent());
 }
+
 void BallCollection::SpinRight(float spinSpeed) {
 	rightCenterJaguar->Set(spinSpeed);
+	float rightAmps = (rightCenterJaguar->GetOutputCurrent());
 }
+
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
