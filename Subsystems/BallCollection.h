@@ -20,6 +20,7 @@ public:
 	void InitDefaultCommand();
 	void SpinLeft(float spinSpeed);
 	void SpinRight(float spinSpeed);
+	float leftAmps, rightAmps;
 };
 
 #endif

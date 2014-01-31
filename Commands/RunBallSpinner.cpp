@@ -1,5 +1,5 @@
 #include "RunBallSpinner.h"
-// #include "../Subsystems/BallCollection.h"
+#include "../Subsystems/BallCollection.h"
 
 RunBallSpinner::RunBallSpinner() {
 	// Use requires() here to declare subsystem dependencies
@@ -18,15 +18,17 @@ int i=0;
 float rAmps, lAmps;
 // Called repeatedly when this Command is scheduled to run
 void RunBallSpinner::Execute() {
-	ballCollection->SpinLeft ((oi->rightJoy->GetThrottle())*-1);		// Invert left motor
-	ballCollection->SpinRight(oi->rightJoy->GetThrottle());
-
+	ballCollection->SpinLeft ((oi->rightJoy->GetRawAxis(4))*-1);		// Invert left motor
+	ballCollection->SpinRight(oi->rightJoy->GetRawAxis(4));
+	cout << "This is only a test";
 	if (i == 10) {
 		rAmps = rAmps/10;
 		lAmps = lAmps/10;
 		cout<< "Right Center Motor Current: " << rAmps << " Amps/n";
 		cout<< "Light Center Motor Current: " << lAmps << " Amps/n/n";
 		i = 0;
+		rAmps = 0;
+		lAmps = 0;
 	}
 	else {
 		i++;

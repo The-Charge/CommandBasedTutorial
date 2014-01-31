@@ -18,12 +18,12 @@ void BallCollection::InitDefaultCommand() {
 
 void BallCollection::SpinLeft(float spinSpeed) {
 	leftCenterJaguar->Set(spinSpeed);
-	float leftAmps =(leftCenterJaguar->GetOutputCurrent());
+	leftAmps =(leftCenterJaguar->GetOutputCurrent());
 }
 
 void BallCollection::SpinRight(float spinSpeed) {
 	rightCenterJaguar->Set(spinSpeed);
-	float rightAmps = (rightCenterJaguar->GetOutputCurrent());
+	rightAmps = (rightCenterJaguar->GetOutputCurrent());
 }
 
 
