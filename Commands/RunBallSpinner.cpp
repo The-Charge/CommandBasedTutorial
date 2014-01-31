@@ -20,7 +20,8 @@ float rAmps, lAmps;
 void RunBallSpinner::Execute() {
 	ballCollection->SpinLeft ((oi->rightJoy->GetRawAxis(4))*-1);		// Invert left motor
 	ballCollection->SpinRight(oi->rightJoy->GetRawAxis(4));
-	cout << "This is only a test";
+
+/*
 	if (i == 10) {
 		rAmps = rAmps/10;
 		lAmps = lAmps/10;
@@ -35,6 +36,7 @@ void RunBallSpinner::Execute() {
 		rAmps = rAmps + rightAmps;
 		lAmps = lAmps + leftAmps;
 	}
+*/
 }
 
 // Make this return true when this Command no longer needs to run execute()

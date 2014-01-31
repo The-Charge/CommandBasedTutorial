@@ -19,11 +19,13 @@ void BallCollection::InitDefaultCommand() {
 void BallCollection::SpinLeft(float spinSpeed) {
 	leftCenterJaguar->Set(spinSpeed);
 	leftAmps =(leftCenterJaguar->GetOutputCurrent());
+	cout << "LeftAmps: " << leftAmps << "Amps";
 }
 
 void BallCollection::SpinRight(float spinSpeed) {
 	rightCenterJaguar->Set(spinSpeed);
 	rightAmps = (rightCenterJaguar->GetOutputCurrent());
+	cout << "RightAmps: " << rightAmps << "Amps";
 }
 
 
