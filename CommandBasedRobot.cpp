@@ -1,9 +1,8 @@
 #include "WPILib.h"
 #include "Commands/Command.h"
 #include "Commands/ExampleCommand.h"
-//#include "Commands/DriveMotorCommand.h"
-//#include "Commands/DriveMotorOneSec.h"
 #include "CommandBase.h"
+#include "NetworkTables/NetworkTable.h"
 
 class CommandBasedRobot : public IterativeRobot {
 private:
@@ -37,7 +36,10 @@ private:
 	}
 	
 	virtual void TestPeriodic() {
+		float couter=0;
 		lw->Run();
+		SmartDashboard::PutNumber("Counter", couter++);
+		Wait(0.10);
 	}
 };
 
