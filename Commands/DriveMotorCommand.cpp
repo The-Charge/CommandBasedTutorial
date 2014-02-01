@@ -14,8 +14,8 @@ void DriveMotorCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void DriveMotorCommand::Execute() {
-	motorControlSubsystem->DriveLeft (((oi->rightJoy->GetY())+(oi->rightJoy->GetX()))/2);
-	motorControlSubsystem->DriveRight(((oi->rightJoy->GetX())-(oi->rightJoy->GetY()))/2);
+	motorControlSubsystem->DriveRight (((oi->rightJoy->GetX())+(oi->rightJoy->GetY()))/2);
+	motorControlSubsystem->DriveLeft  (((oi->rightJoy->GetY())-(oi->rightJoy->GetX()))/2);
 
 }
 

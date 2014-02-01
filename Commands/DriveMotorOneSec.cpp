@@ -16,8 +16,8 @@ void DriveMotorOneSec::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void DriveMotorOneSec::Execute() {
-	motorControlSubsystem->DriveLeft(.3);
-	motorControlSubsystem->DriveRight(.3);
+	motorControlSubsystem->DriveLeft(-.3);
+	motorControlSubsystem->DriveRight(-.3);
 
 }
 

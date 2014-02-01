@@ -14,7 +14,8 @@ private:
 	// for methods that implement subsystem capabilities
 	CANJaguar *leftFrontJaguar;
 	CANJaguar *leftRearJaguar;
-	CANJaguar *rightFrontJaguar;
+//	CANJaguar *rightFrontJaguar;
+	Jaguar	*rightFrontJaguar;
 	CANJaguar *rightRearJaguar;
 	
 public:

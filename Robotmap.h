@@ -10,7 +10,8 @@
  */
  
 #define leftFrontMotor 2		// Jag on CAN Buss
-#define rightFrontMotor 10		// Jag on CAN Buss
+// #define rightFrontMotor 10		// Jag on CAN Buss
+#define rightFrontMotor 1		// PWM-1
 #define leftRearMotor 9			// Jag on CAN Buss
 #define rightRearMotor 16		// Jag on CAN Buss
 

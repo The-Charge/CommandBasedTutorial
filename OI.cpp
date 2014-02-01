@@ -2,6 +2,7 @@
 #include "Commands/ExampleCommand.h"
 // #include "Commands/DriveMotorCommand.h"
 #include "Commands/DriveMotorOneSec.h"
+#include "Commands/CenterServo.h"
 // #include "Commands/RunServo.h"
 #include "Robotmap.h"
 
@@ -14,10 +15,12 @@ OI::OI() {
 	
 	button2 = new JoystickButton(rightJoy, 2);
 	button2->WhileHeld(new ExampleCommand());
-	
+
 	button3 = new JoystickButton(rightJoy, 3);
-	button3->WhenReleased(new ExampleCommand());
+	button3->WhenPressed(new CenterServo());
+//	button3->WhenReleased(new ExampleCommand());
 	
 	button4 = new JoystickButton(rightJoy, 4);
 	button4->WhenPressed(new DriveMotorOneSec());
+
 }
