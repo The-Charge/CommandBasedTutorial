@@ -21,11 +21,17 @@ OI::OI() {
 	button4 = new JoystickButton(rightJoy, 4);
 	button4->WhenPressed(new DriveMotorOneSec());
 	
+	button5 = new JoystickButton(rightJoy, 5);
+	button5->WhenPressed(new ShifterLow());
+	
+	button6 = new JoystickButton(rightJoy, 6);
+	button6->WhenPressed(new ShifterHigh());
+	
 	shiftHighButton = new InternalButton;
 	shiftLowButton  = new InternalButton;
 	
-	shiftHighButton->WhenPressed(new ShifterHigh());
-	shiftLowButton->WhenPressed(new ShifterLow());
+//	shiftHighButton->WhenPressed(new ShifterHigh());
+//	shiftLowButton->WhenPressed(new ShifterLow());
 }
 
 Joystick* OI::getDriverJoystick() {
