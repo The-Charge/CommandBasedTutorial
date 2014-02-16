@@ -8,7 +8,7 @@ ShifterHigh::ShifterHigh() {
 
 // Called just before this Command runs the first time
 void ShifterHigh::Initialize() {
-	SetTimeout(1);
+//	SetTimeout(1);
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -18,12 +18,13 @@ void ShifterHigh::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool ShifterHigh::IsFinished() {
-	return IsTimedOut();			// Will be TRUE after 1 second from Init
+	return false;
+//	return IsTimedOut();			// Will be TRUE after 1 second from Init
 }
 
 // Called once after isFinished returns true
 void ShifterHigh::End() {
-	shifter->ShiftOff();	
+//	shifter->ShiftOff();	
 }
 
 // Called when another command which requires one or more of the same
