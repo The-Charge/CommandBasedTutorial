@@ -14,9 +14,11 @@ void DriveMotorCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void DriveMotorCommand::Execute() {
-	motorControlSubsystem->DriveLeft (((oi->rightJoy->GetY())+(oi->rightJoy->GetX()))/2);
-	motorControlSubsystem->DriveRight(((oi->rightJoy->GetX())-(oi->rightJoy->GetY()))/2);
-
+	float leftSpeed   = (oi->getDriverJoystick()->GetY()) + (oi->getDriverJoystick()->GetThrottle());
+	float rightSpeed  = (oi->getDriverJoystick()->GetY()) - (oi->getDriverJoystick()->GetThrottle());
+	
+	motorControlSubsystem->DriveLeft(leftSpeed);
+	motorControlSubsystem->DriveRight(rightSpeed);
 }
 
 // Make this return true when this Command no longer needs to run execute()

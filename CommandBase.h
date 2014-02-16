@@ -5,6 +5,7 @@
 #include "Subsystems/ExampleSubsystem.h"
 #include "Subsystems/MotorControlSubsystem.h"
 #include "Subsystems/ServoSubsystem.h"
+#include "Subsystems/Shifter.h"
 #include "OI.h"
 
 
@@ -22,6 +23,7 @@ public:
 	static ExampleSubsystem *examplesubsystem;
 	static MotorControlSubsystem *motorControlSubsystem;
 	static ServoSubsystem *servoSubsystem;
+	static Shifter *shifter;
 	static OI *oi;
 };
 
