@@ -34,6 +34,18 @@ private:
 	
 	virtual void TeleopPeriodic() {
 		Scheduler::GetInstance()->Run();
+		if ((CommandBase::oi->rightJoy->GetRawAxis(6)) == -1) {
+				CommandBase::oi->shiftHighButton->SetPressed(true);
+				CommandBase::oi->shiftLowButton->SetPressed(false);
+		}
+		else if ((CommandBase::oi->rightJoy->GetRawAxis(6)) ==  1) {
+			CommandBase::oi->shiftHighButton->SetPressed(false);
+			CommandBase::oi->shiftLowButton->SetPressed(true);
+		}
+		else {
+			CommandBase::oi->shiftHighButton->SetPressed(false);
+			CommandBase::oi->shiftLowButton->SetPressed(false);
+		}
 	}
 	
 	virtual void TestPeriodic() {

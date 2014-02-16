@@ -14,7 +14,7 @@ Shifter::Shifter() : Subsystem("Shifter") {
 void Shifter::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	//SetDefaultCommand(new MySpecialCommand());
-	SetDefaultCommand(new ShifterHigh());
+//	SetDefaultCommand(new ShifterHigh());
 }
 
 

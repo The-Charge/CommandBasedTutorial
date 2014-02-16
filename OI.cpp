@@ -24,19 +24,6 @@ OI::OI() {
 	shiftHighButton = new InternalButton;
 	shiftLowButton  = new InternalButton;
 	
-	if ((rightJoy->GetRawAxis(5)) == -1) {
-			shiftHighButton->SetPressed(true);
-			shiftLowButton->SetPressed(false);
-	}
-	else if ((rightJoy->GetRawAxis(5)) ==  1) {
-		shiftHighButton->SetPressed(false);
-		shiftLowButton->SetPressed(true);
-	}
-	else {
-		shiftHighButton->SetPressed(false);
-		shiftLowButton->SetPressed(false);
-	}
-	
 	shiftHighButton->WhenPressed(new ShifterHigh());
 	shiftLowButton->WhenPressed(new ShifterLow());
 }
