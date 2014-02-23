@@ -9,9 +9,9 @@
  * floating around.
  */
  
-#define leftFrontMotor 6		// Jag on CAN Buss  2
+#define leftFrontMotor 6		// Jag on CAN Buss
 #define rightFrontMotor 11		// Jag on CAN Buss
-#define leftRearMotor 18		// Jag on CAN Buss 18
+#define leftRearMotor 18		// Jag on CAN Buss
 #define rightRearMotor 5		// Jag on CAN Buss
 #define shifterShifterLeft 1	// PWM port for left shifter servo
 #define shifterShifterRight 2	// PWM port for right shifter servo
